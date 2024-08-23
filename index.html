@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: papayawhip;
+      }
+      img,
+      canvas {
+        border: solid 2px;
+      }
+      .invisible {
+        display: none;
+      }
+    </style>
+    <title>SPD Sprites</title>
+  </head>
+  <body>
+    <section class="dungeon">
+      <img class="dungeon invisible" src="dungeon.jpg" />
+      <canvas class="big-dungeon" width="2250" height="1350"></canvas>
+      <canvas class="little-dungeon" height="200" width="400"></canvas>
+    </section>
+    <section class="sewer">
+      <h2>Sewers</h2>
+      <div>
+        <h3>Sewer spritesheet image (img)</h3>
+        <img
+          class="sewer-spritesheet"
+          width="256"
+          height="256"
+          src="tiles_sewers.png"
+        />
+      </div>
+      <div>
+        <h3>Floor sprite (canvas)</h3>
+        <canvas class="floor-sprite" width="128" height="128"></canvas>
+      </div>
+      <div>
+        <h3>Floor tiling (canvas)</h3>
+        <canvas class="floor-tiling" width="384" height="384"></canvas>
+      </div>
+    </section>
+    <section class="mage">
+      <h2>Mage</h2>
+      <div>
+        <h3>Mage spritesheet image (img)</h3>
+        <img class="mage-spritesheet" width="256" height="128" src="mage.png" />
+      </div>
+      <div>
+        <h3>Mage spritesheet (canvas)</h3>
+        <canvas class="mage-spritesheet" width="256" height="128"></canvas>
+      </div>
+      <div>
+        <h3>Mage running sprite sequence (canvas)</h3>
+        <canvas class="mage-sequence" width="600" height="100"></canvas>
+      </div>
+      <div>
+        <h3>Mage running in place animation (canvas)</h3>
+        <canvas class="mage-running-in-place" width="80" height="100"></canvas>
+      </div>
+      <div>
+        <h3>Mage running animation (canvas)</h3>
+        <canvas class="mage-running" width="800" height="100"></canvas>
+      </div>
+    </section>
+    <script type="module" src="/src/mage.ts"></script>
+    <script type="module" src="/src/sewers.ts"></script>
+    <script type="module" src="/src/dungeon.ts"></script>
+  </body>
+</html>
